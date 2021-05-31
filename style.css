@@ -1,0 +1,181 @@
+* { margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    background: url("assets/background.jpg");
+}
+
+nav.sidenav { 
+    width: 0; 
+    height: 100vh; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    background-color: #444; 
+    padding-top: 50px; 
+    overflow: hidden; 
+    transition: width 500ms;
+}
+
+span.close-sidenav { 
+    position: absolute; 
+    top: 15px; 
+    right: 20px; 
+    font: normal 40px Arial, sans-serif; 
+    color: #eee; 
+    cursor: pointer;
+}
+
+h1.contatos {
+    margin-top: 20px;
+    color: white;
+}
+
+a.link { 
+    display: block; 
+    /*padding: 15px 40px;*/
+    margin-top: 50px;
+    white-space: nowrap; 
+    text-decoration: none; 
+    font: normal 30px Arial, sans-serif; 
+    color: #ccc; 
+    transition: color 250ms;
+}
+
+
+
+a.link:hover {
+    color: #fff; 
+}
+
+main { 
+    height: 100%; 
+    margin-left: 0; 
+    position: relative; 
+    transition: margin-left 500ms;
+}
+
+span.open-sidenav {
+    color: #fff;
+    position: absolute; 
+    top: -16px; 
+    left: 30px; 
+    font: normal 40px Arial, sans-serif; 
+    line-height: 80px; 
+    cursor: pointer; 
+} 
+
+
+
+
+body {
+    text-align: center;
+    background-color: #323232;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+img {
+    width: 650px;
+    margin-bottom: 20px;;
+}
+
+p.mensagem {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;;
+}
+
+button {
+    height: 70px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #cfff00;
+    border-radius: 10px;
+    background-color: #323232be;
+    color: white;
+    transition: .2s all;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+
+button.dolarPreal {
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #cfff00;
+    color: #323232;
+}
+
+button:focus {
+    outline: 0;
+}
+
+@media (max-width: 364px) {
+    button.dolarPreal {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        /*margin-top: 0px;*/
+        font-size: 35px;
+    }
+    
+    img {
+        width: 450px;
+    }
+
+    span.open-sidenav {
+        top: -17px;
+    }
+}
+
+@media (max-width: 570px) {
+    span.open-sidenav {
+        top: -10px;
+    }
+
+    h1 {
+        margin-top: 60px;
+        display: inline-flex;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1450px) and (min-height: 850px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    img {
+        width: 900px;
+    }
+
+    p.mensagem {
+       font-size: 50px;
+    }
+
+    button {
+        height: 100px;
+        width: 250px;
+        font-size: 30px;
+    }
+}
+
+@media (max-height: 540px) {
+    img {
+        width: 400px;
+    }
+}

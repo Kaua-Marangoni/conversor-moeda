@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/ico-1.ico" type="image/x-icon">
+    <title>Dólar -> Real | Conversor de Moedas</title>
+    <link rel="stylesheet" href="dolar-real.css">
+</head>
+
+<body>
+
+    <a href="../index.html"><img class="home" src="../assets/home.png" alt="home"></a>
+
+    <img class="image-top" src="../assets/dolar-para-real.png">
+    <h1>Conversor de moedas | Dólar para Real</h1>
+
+    <div>
+
+        <input id="input-dolar" type="number" placeholder="Valor em Dólar" required>
+        <!--<span class="dolar">Valor em Dólar</span>-->
+        <input id="input-valor-do-dolar" type="number" placeholder="Valor do Dólar" required>
+        <!--<span class="valor-dolar">Valor do Dólar</span>-->
+
+        <p id="valor-final-real">$ 0</p>
+
+        <button onclick="valorFinal()">Converter</button>
+        
+        <div class="back">
+            <a class="voltar" href="../index.html">
+                <img class="return" src="../assets/arrow-return-left.svg">
+                Voltar
+            </a>
+        </div>
+    </div>
+</body>
+
+<script src="dolar-real.js"></script>
+</html>

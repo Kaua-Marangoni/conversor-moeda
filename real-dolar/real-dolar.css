@@ -1,0 +1,169 @@
+body {
+    background: url("../assets/background.jpg");
+    text-align: center;
+    background-color: #323232;
+}
+
+img.home {
+    position: absolute;
+    width: 35px;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(101%);
+}
+
+img.image-top {
+    margin-top: 20px;
+    width: 200px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(101%);
+}
+
+h1 {
+    color: white;
+    font-size: 35px;
+}
+
+input {
+    width: 140px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+input:focus {
+    outline: 0;
+}
+
+
+/*Tirar as setinhas de aumentar ou diminuir o número*/
+/*input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+/*span {
+    position: absolute;
+    margin-left: -144px;
+    margin-top: 10px;
+    pointer-events: none;
+    transition: .5s;
+    opacity: .8;
+}
+
+#input-real:focus ~ span.real,
+#input-real:valid ~ span.real {
+    transform: translateY(-25px);
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+}
+
+#input-valor-do-dolar:focus ~ span.dolar,
+#input-valor-do-dolar:valid ~ span.dolar {
+    transform: translateY(-25px);
+    color: white;
+    font-size: 14px;
+    opacity: 1;
+}*/
+
+#input-real {
+    border: 2px solid #cfff00;
+}
+
+#input-valor-do-dolar {
+    border: 2px solid red;
+}
+
+p {
+    color: white;
+    font-weight: bold;
+}
+
+button,
+a.voltar {
+    height: 70px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #cfff00;
+    border-radius: 10px;
+    background-color: #323232be;
+    color: white;
+    transition: .2s all;
+    text-decoration: none !important;
+}
+
+button:hover,
+a.voltar:hover {
+    background-color: #cfff00;
+    color: #323232;
+}
+
+a.voltar:hover {
+    font-weight: 500;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a.voltar {
+    height: 50px;
+    width: 130px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none !important;
+}
+
+img.return {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(157deg) brightness(102%) contrast(105%);
+    width: 20px;
+    margin-right: 10px;
+}
+
+a.voltar:hover img.return {
+    filter: invert(0%) sepia(0%) saturate(11%) hue-rotate(191deg) brightness(95%) contrast(102%);
+}
+
+div.back {
+    margin-top: 13px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 604px) {
+    img.image-top {
+        width: 150px;
+    }
+}
+
+@media (max-width: 327px) {
+    #input-valor-do-dolar {
+        margin-top: 20px;
+    }
+
+    span.dolar {
+        margin-top: 31px;
+    }
+}
+
+@media (max-width: 500px) {
+    img.home {
+        width: 30px;
+        top: 5px;
+        left: 5px;
+    }
+}
+
+
+#susto {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 17, 255);
+    top: 0;
+    left: 0;
+}
