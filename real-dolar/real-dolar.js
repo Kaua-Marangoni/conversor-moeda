@@ -13,16 +13,6 @@ function valorFinal() {
         currency:'USD'
     })
 
-    //const fetchDolar = () => {
-        //const url = `https://economia.awesomeapi.com.br/all/USD-BRL`
-        
-        //fetch(url)
-            //.then(response => response.json())
-            //.then(dolar => {
-                //console.log(dolar)
-            //})
-    //}
-    
     let resultado = real / dolar;
 
     let final = document.querySelector("p");
@@ -31,9 +21,3 @@ function valorFinal() {
     final.style.fontSize = "23px";
     botaoConverte.innerHTML = "Converter outro Valor";
 }
-
-//function valorFinal() {
-    //var susto = document.getElementById("susto");
-
-    //susto.style.display = "flex";
-//}
