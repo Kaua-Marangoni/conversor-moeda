@@ -1,29 +1,37 @@
-* { margin: 0; padding: 0; box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background: url("assets/background.jpg");
 }
 
-nav.sidenav { 
-    width: 0; 
-    height: 100vh; 
+nav.sidenav {
+    width: 0;
+    height: 100vh;
     position: fixed;
-    top: 0; 
-    left: 0; 
-    background-color: #444; 
-    padding-top: 50px; 
-    overflow: hidden; 
+    top: 0;
+    left: 0;
+    background-color: #444;
+    padding-top: 50px;
+    overflow: hidden;
     transition: width 500ms;
 }
 
-span.close-sidenav { 
-    position: absolute; 
-    top: 15px; 
-    right: 20px; 
-    font: normal 40px Arial, sans-serif; 
-    color: #eee; 
+span.close-sidenav {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font: normal 40px Arial, sans-serif;
+    color: #eee;
     cursor: pointer;
+    transition: .1s;
+}
+
+span.close-sidenav:hover {
+    color: rgb(156, 156, 156);
 }
 
 h1.contatos {
@@ -31,42 +39,37 @@ h1.contatos {
     color: white;
 }
 
-a.link { 
-    display: block; 
+a.link {
+    display: block;
     /*padding: 15px 40px;*/
     margin-top: 50px;
-    white-space: nowrap; 
-    text-decoration: none; 
-    font: normal 30px Arial, sans-serif; 
-    color: #ccc; 
+    white-space: nowrap;
+    text-decoration: none;
+    font: normal 30px Arial, sans-serif;
+    color: #ccc;
     transition: color 250ms;
 }
 
-
-
 a.link:hover {
-    color: #fff; 
+    color: #fff;
 }
 
-main { 
-    height: 100%; 
-    margin-left: 0; 
-    position: relative; 
+main {
+    height: 100%;
+    margin-left: 0;
+    position: relative;
     transition: margin-left 500ms;
 }
 
 span.open-sidenav {
     color: #fff;
-    position: absolute; 
-    top: -16px; 
-    left: 30px; 
-    font: normal 40px Arial, sans-serif; 
-    line-height: 80px; 
-    cursor: pointer; 
-} 
-
-
-
+    position: absolute;
+    top: -16px;
+    left: 30px;
+    font: normal 40px Arial, sans-serif;
+    line-height: 80px;
+    cursor: pointer;
+}
 
 body {
     text-align: center;
@@ -82,13 +85,15 @@ h1 {
 
 img {
     width: 650px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
 
 p.mensagem {
     color: white;
     font-size: 30px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    ;
 }
 
 button {
@@ -129,11 +134,9 @@ button:focus {
         /*margin-top: 0px;*/
         font-size: 35px;
     }
-    
     img {
         width: 450px;
     }
-
     span.open-sidenav {
         top: -17px;
     }
@@ -143,12 +146,10 @@ button:focus {
     span.open-sidenav {
         top: -10px;
     }
-
     h1 {
         margin-top: 60px;
         display: inline-flex;
     }
-
     img {
         width: 100%;
     }
@@ -158,15 +159,12 @@ button:focus {
     h1 {
         font-size: 60px;
     }
-
     img {
         width: 900px;
     }
-
     p.mensagem {
-       font-size: 50px;
+        font-size: 50px;
     }
-
     button {
         height: 100px;
         width: 250px;

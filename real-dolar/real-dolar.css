@@ -37,8 +37,8 @@ input:focus {
 }
 
 
-/*Tirar as setinhas de aumentar ou diminuir o número*/
-/*input[type=number]::-webkit-inner-spin-button,
+/*Tirar as setinhas de aumentar ou diminuir o número
+input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
 }
@@ -101,6 +101,25 @@ a.voltar:hover {
     color: #323232;
 }
 
+#botao-converter-denovo {
+    display: none;
+    height: 70px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #cfff00;
+    border-radius: 10px;
+    background-color: #323232be;
+    color: white;
+    transition: .2s all;
+    text-decoration: none !important;
+}
+
+#botao-converter-denovo:hover {
+    background-color: #cfff00;
+    color: #323232;
+}
+
 a.voltar:hover {
     font-weight: 500;
 }
@@ -143,7 +162,6 @@ div.back {
     #input-valor-do-dolar {
         margin-top: 20px;
     }
-
     span.dolar {
         margin-top: 31px;
     }
@@ -155,15 +173,4 @@ div.back {
         top: 5px;
         left: 5px;
     }
-}
-
-
-#susto {
-    display: none;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0, 17, 255);
-    top: 0;
-    left: 0;
 }

@@ -40,6 +40,7 @@ input:focus {
     border: 2px solid #cfff00;
 }
 
+
 /*span {
     position: absolute;
     margin-left: -144px;
@@ -94,6 +95,25 @@ a.voltar:hover {
     color: #323232;
 }
 
+#botao-converter-denovo {
+    display: none;
+    height: 70px;
+    width: 170px;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid #cfff00;
+    border-radius: 10px;
+    background-color: #323232be;
+    color: white;
+    transition: .2s all;
+    text-decoration: none !important;
+}
+
+#botao-converter-denovo:hover {
+    background-color: #cfff00;
+    color: #323232;
+}
+
 a.voltar:hover {
     font-weight: 500;
 }
@@ -136,7 +156,6 @@ div.back {
     #input-valor-do-dolar {
         margin-top: 20px;
     }
-
     span.valor-dolar {
         margin-top: 31px;
     }
