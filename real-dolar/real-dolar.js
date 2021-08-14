@@ -1,22 +1,40 @@
-function valorFinal() {
-    let real = document.getElementById("input-real").value;
-    let dolar = document.getElementById("input-valor-do-dolar").value;
-    let botaoConverte = document.getElementById("botao");
-    let botaoNovoValor = document.getElementById("botao-converter-denovo");
+const values = async () => {
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL").then(response => response.json())
+    const valueDolar = data.USDBRL.ask
 
-    let numBRL = new Intl.NumberFormat('pt-BR', {
-        style: 'currency',
-        currency: 'BRL'
-    })
-
-    let numUSD = new Intl.NumberFormat('pt-BR', {
+    const numUSD = new Intl.NumberFormat('pt-BR', {
         style: 'currency',
         currency: 'USD'
     })
 
-    let resultado = real / dolar;
+    const dolar = document.getElementById("input-valor-do-dolar").value = `Dólar: ${numUSD.format(valueDolar)}`
+}
+values()
 
-    let final = document.querySelector("p");
+const valorFinal = async () => {
+    const real = document.getElementById("input-real").value;
+
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL").then(response => response.json())
+    const valueDolar = data.USDBRL.ask
+
+    const botaoConverte = document.getElementById("botao");
+    const botaoNovoValor = document.getElementById("botao-converter-denovo");
+
+    const numBRL = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    })
+
+    const numUSD = new Intl.NumberFormat('pt-BR', {
+        style: 'currency',
+        currency: 'USD'
+    })
+
+    const resultado = real / valueDolar;
+
+    const final = document.querySelector("p");
+
+    document.getElementById("input-real").setAttribute("readonly", "true");
 
     final.innerHTML = numBRL.format(real) + " convertido para Dólar é: " + numUSD.format(resultado);
     final.style.fontSize = "23px";

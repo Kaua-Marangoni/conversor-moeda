@@ -15,16 +15,15 @@
     <a href="../index.html"><img class="home" src="../assets/home.png" alt="home"></a>
 
     <img class="image-top" src="../assets/dolar-para-real.png">
-    <h1>Conversor de moedas | Dólar para Real</h1>
+    <h1>Conversor de Moedas | Dólar para Real</h1>
 
     <div>
 
         <input id="input-dolar" type="number" placeholder="Valor em Dólar" required>
-        <!--<span class="dolar">Valor em Dólar</span>-->
-        <input id="input-valor-do-dolar" type="number" placeholder="Valor do Dólar" required>
-        <!--<span class="valor-dolar">Valor do Dólar</span>-->
 
-        <p id="valor-final-real">$ 0</p>
+        <input id="input-valor-do-dolar" readonly type="text">
+
+        <p id="valor-final-real">R$ 0,00</p>
 
         <button id="botao" onclick="valorFinal()">Converter</button>
 

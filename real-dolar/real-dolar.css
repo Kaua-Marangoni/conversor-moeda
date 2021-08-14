@@ -25,48 +25,21 @@ h1 {
 }
 
 input {
-    width: 140px;
+    padding-left: 10px;
+    width: 120px;
     height: 35px;
     border-radius: 5px;
-    margin-left: 3px;
-    margin-right: 3px;
+    margin: 0 3px;
 }
 
 input:focus {
     outline: 0;
 }
 
-
-/*Tirar as setinhas de aumentar ou diminuir o número
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
+input#input-real::placeholder {
+    color: #000;
+    opacity: .7;
 }
-
-/*span {
-    position: absolute;
-    margin-left: -144px;
-    margin-top: 10px;
-    pointer-events: none;
-    transition: .5s;
-    opacity: .8;
-}
-
-#input-real:focus ~ span.real,
-#input-real:valid ~ span.real {
-    transform: translateY(-25px);
-    color: white;
-    font-size: 14px;
-    opacity: 1;
-}
-
-#input-valor-do-dolar:focus ~ span.dolar,
-#input-valor-do-dolar:valid ~ span.dolar {
-    transform: translateY(-25px);
-    color: white;
-    font-size: 14px;
-    opacity: 1;
-}*/
 
 #input-real {
     border: 2px solid #cfff00;
@@ -74,6 +47,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 #input-valor-do-dolar {
     border: 2px solid red;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+#valor-final-dolar {
+    font-size: 23px;
 }
 
 p {

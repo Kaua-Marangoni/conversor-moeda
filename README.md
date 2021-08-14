@@ -1,13 +1,19 @@
 # conversor-moeda
 
-<img src="./assets/conversor-desktop.png" alt="imagem de exemplo para desktop">
+Currency Converter. Real to Dollar and Dollar to Real. With Real-time Dollar Value.
+
+<img src="./assets/example/index-e-contatos.png" alt="imagem de exemplo para desktop" style="width: 999px">
+
+<img src="./assets/example/real-para-dolar-e-convertido.png" alt="imagem de exemplo para desktop" style="width: 999px">
+
+<!-- <img src="./assets/example/real-para-dolar-e-convertido.png" alt="imagem de exemplo para desktop"> -->
 
 > Result of the currency converter, converting from real to dollar and dollar to real. Responsive Layout.
 
 <br>
 <br>
 
-<img src="./assets/conversor-mobile.png" alt="imagem de exemplo para mobile">
+<img src="./assets/example/mobile.png" alt="imagem de exemplo para mobile" style="width: 500px">
 
 > Result on Mobile
 
