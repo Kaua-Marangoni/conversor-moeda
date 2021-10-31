@@ -1,3 +1,7 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 body {
     background: url("../assets/background.jpg");
     text-align: center;
@@ -202,6 +206,10 @@ div.back {
 }
 
 @media (max-width: 604px) {
+    main {
+        margin-top: 20px;
+    }
+
     img.image-top {
         width: 150px;
     }
