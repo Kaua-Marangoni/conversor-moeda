@@ -14,29 +14,31 @@
 
     <a href="../index.html"><img class="home" src="../assets/home.png" alt="home"></a>
 
-    <img class="image-top" src="../assets/dolar-para-real.png">
-    <h1>Conversor de Moedas | Dólar para Real</h1>
-
-    <div>
-
-        <input id="input-dolar" type="number" placeholder="Valor em Dólar" required>
-
-        <input id="input-valor-do-dolar" readonly type="text">
-
-        <p id="valor-final-real">R$ 0,00</p>
-
-        <button id="botao" onclick="valorFinal()">Converter</button>
-
-        <a href="./dolar-real.html"><button id="botao-converter-denovo">Converter outro Valor</button></a>
-
-        <div class="back">
-            <a class="voltar" href="../index.html">
-                <img class="return" src="../assets/arrow-return-left.svg"> Voltar
-            </a>
+    <main>
+        <img class="image-top" src="../assets/dolar-para-real.png">
+        <h1>Conversor de Moedas | Dólar para Real</h1>
+        <div>
+            <input id="input-dolar" type="number" placeholder="Valor em Dólar" required>
+            <input id="input-valor-do-dolar" readonly type="text">
+            <p id="valor-final-real">R$ 0,00</p>
+            <button id="botao" onclick="valorFinal()">Converter</button>
+            <a href="./dolar-real.html"><button id="botao-converter-denovo">Converter outro Valor</button></a>
+            <div class="back">
+                <a class="voltar" href="../index.html">
+                    <img class="return" src="../assets/arrow-return-left.svg"> Voltar
+                </a>
+            </div>
         </div>
-    </div>
+        <div id="modal-container">
+            <div id="modal">
+                <i class="fas fa-exclamation"></i>
+                <p class="paragraph-modal">Por favor, digite um valor válido!</p>
+            </div>
+        </div>
+    </main>
 </body>
 
+<script src="https://kit.fontawesome.com/f47bef615d.js" crossorigin="anonymous"></script>
 <script src="dolar-real.js"></script>
 
 </html>

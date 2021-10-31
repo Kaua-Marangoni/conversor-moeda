@@ -13,8 +13,11 @@ img.home {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(101%);
 }
 
+main {
+    margin-top: 70px;
+}
+
 img.image-top {
-    margin-top: 20px;
     width: 200px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(209deg) brightness(109%) contrast(101%);
 }
@@ -132,6 +135,70 @@ a.voltar:hover img.return {
 div.back {
     margin-top: 13px;
     margin-bottom: 50px;
+}
+
+#modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+#modal {
+    background: #fff8dc;
+    width: 35%;
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+    padding: 40px 15px;
+    border: 3px solid #cfff00;
+    border-radius: 5px;
+    animation: modal 2500ms;
+}
+
+.paragraph-modal {
+    color: #000;
+}
+
+.fa-exclamation {
+    font-size: 20px;
+    color: red;
+    border: 3px solid black;
+    padding: 15px 23px;
+    border-radius: 50%;
+}
+
+@keyframes modal {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    90% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
 }
 
 @media (max-width: 604px) {

@@ -1,5 +1,5 @@
 const sidenav = document.querySelector( "nav.sidenav");
-const mainContent = document.querySelector( "main.main-content"); 
+const mainContent = document.querySelector( "div.main-content"); 
 const openSidenav = document.querySelector("span.open-sidenav"); 
 const closeSidenav = document.querySelector("span.close-sidenav");
 
