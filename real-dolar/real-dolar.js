@@ -28,6 +28,7 @@ const valorFinal = async () => {
     const data = await fetch(
       "https://economia.awesomeapi.com.br/last/USD-BRL"
     ).then((response) => response.json());
+
     const valueDolar = data.USD.ask;
 
     const botaoConverte = document.getElementById("botao");

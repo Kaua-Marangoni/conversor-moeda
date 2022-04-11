@@ -2,6 +2,7 @@ const values = async () => {
   const data = await fetch(
     "https://economia.awesomeapi.com.br/last/USD-BRL"
   ).then((response) => response.json());
+  
   const valueDolar = data.USD.ask;
 
   const numUSD = new Intl.NumberFormat("pt-BR", {
@@ -28,6 +29,7 @@ const valorFinal = async () => {
     const data = await fetch(
       "https://economia.awesomeapi.com.br/last/USD-BRL"
     ).then((response) => response.json());
+    
     const valueDolar = data.USD.ask;
 
     let botaoConverte = document.getElementById("botao");
